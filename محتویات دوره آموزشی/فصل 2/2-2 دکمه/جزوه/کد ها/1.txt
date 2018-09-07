@@ -1,0 +1,19 @@
+﻿//state تعریف متغیر بولین 
+bool state;
+
+void setup() {
+// راه اندازی ارتباط سریال
+  Serial.begin(9600);
+// تعریف حالت پین 3 در وضعیت ورودی
+  pinMode(3,INPUT);
+}
+
+void loop() {
+// خواندن وضعیت دیجیتالِ پین 3
+  state = digitalRead(3);
+// نمایش متغیر 
+//state
+//در سریال مانیتور
+  Serial.println(state)
+
+}

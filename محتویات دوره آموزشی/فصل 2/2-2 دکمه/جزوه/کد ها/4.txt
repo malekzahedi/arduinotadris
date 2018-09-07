@@ -1,0 +1,24 @@
+﻿int inPin = 2;         
+int outPin = 13;      
+
+int state = HIGH;
+int reading;           
+int previous = LOW;    
+
+void setup()
+{
+  pinMode(inPin, INPUT);
+  pinMode(outPin, OUTPUT);
+}
+
+void loop()
+{
+  reading = digitalRead(inPin);
+// مقایسه وضعیت الان با وضعیت قبلی
+  if (reading == HIGH && previous == LOW ) {
+// نسبت دادن متغیر به نقیض آن
+state = !state
+  }
+  digitalWrite(outPin, state);
+  previous = reading;
+}
