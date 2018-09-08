@@ -1,0 +1,1 @@
+DataType name = value ;     >> name : value

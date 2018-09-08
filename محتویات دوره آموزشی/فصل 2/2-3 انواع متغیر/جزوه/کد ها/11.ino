@@ -1,0 +1,1 @@
+char name = 65;         >> name : 'A'
