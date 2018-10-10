@@ -1,0 +1,1 @@
+String string1 = "Hello"        >> string1 : Hello
