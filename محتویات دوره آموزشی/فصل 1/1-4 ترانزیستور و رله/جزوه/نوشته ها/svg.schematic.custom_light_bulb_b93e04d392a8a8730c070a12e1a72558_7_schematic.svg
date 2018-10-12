@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" y="0px"  enable-background="new 0 0 14.111 22.3" viewBox="0 0 14.111 22.3" xml:space="preserve" height="0.309722in" id="Layer_1" xmlns:xml="http://www.w3.org/XML/1998/namespace" width="0.195986in" version="1.1" gorn="0" x="0px">
+    <desc>
+        <referenceFile>sparkfun-led_led_schematic.svg</referenceFile>
+    </desc>
+    <g  id="schematic" gorn="0.0">
+        <line x1="13.752"  x2="10.152" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" y1="14.75" y2="14.75"/>
+        <line x1="10.152"  x2="6.552" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" y1="14.75" y2="14.75"/>
+        <polygon  fill="#FFFFFF" stroke="#000000" points="13.752,7.55 10.152,14.75 6.552,7.55 10.152,7.55 " stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="4.392"  x2="1.543" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" y1="9.71" y2="12.558"/>
+        <line x1="4.752"  x2="1.859" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" y1="12.951" y2="15.843"/>
+        <line x1="10.152"  x2="10.152" fill="none" stroke="#787878" id="connector1pin" stroke-width="0.75" stroke-linecap="round" y1="21.951" gorn="0.0.5" y2="14.75"/>
+        <rect y="21.951"  fill="none" height="0" id="connector1terminal" width="0.001" gorn="0.0.6" x="10.152"/>
+        <g  transform="translate(3.21098,6.47347)">
+            <g >
+                <g  transform="rotate(270)">
+                    <g >
+                        <g  transform="matrix(1 0 0 1 -12.5641 5.8908)">
+                            <text  fill="#8C8C8C" font-size="2.5" font-family="'DroidSans'">2</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <line x1="10.152"  x2="10.152" fill="none" stroke="#787878" id="connector0pin" stroke-width="0.75" stroke-linecap="round" y1="0.35" gorn="0.0.8" y2="7.55"/>
+        <rect y="0.35"  fill="none" height="0" id="connector0terminal" width="0.001" gorn="0.0.9" x="10.152"/>
+        <g  transform="translate(3.21098,1.39347)">
+            <g >
+                <g  transform="rotate(270)">
+                    <g >
+                        <g  transform="matrix(1 0 0 1 -3.2457 5.8908)">
+                            <text  fill="#8C8C8C" font-size="2.5" font-family="'DroidSans'">1</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <path  stroke="#000000" stroke-width="0.2" d="M0.432,13.669l1.08-2.52l1.44,1.439L0.432,13.669z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path  stroke="#000000" stroke-width="0.2" d="M0.792,16.91l1.08-2.52l1.439,1.439L0.792,16.91z" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>
