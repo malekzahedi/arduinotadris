@@ -1,0 +1,27 @@
+﻿<pre>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+
+<font color="#434f54">&#47;&#47; نعریف شیء از کتابخانه</font>
+<b><font color="#d35400">LiquidCrystal</font></b> <font color="#000000">myCLCD</font><font color="#000000">(</font><font color="#000000">12</font><font color="#434f54">,</font><font color="#000000">11</font><font color="#434f54">,</font><font color="#000000">5</font><font color="#434f54">,</font><font color="#000000">4</font><font color="#434f54">,</font><font color="#000000">3</font><font color="#434f54">,</font><font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#00979c">String</font> <font color="#000000">reading</font><font color="#000000">;</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47;شروع ارتباط با ماژول</font>
+ &nbsp;<font color="#000000">myCLCD</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font><font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47;پاک کردن ال سی دی</font>
+ &nbsp;<font color="#000000">myCLCD</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47;قرار دادن نشانگر در نقطه ی مورد نظر</font>
+ &nbsp;<font color="#000000">myCLCD</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font><font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#5e6d03">while</font><font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">reading</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">flush</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;<font color="#434f54">&#47;&#47;پرینت</font>
+ &nbsp;<font color="#000000">myCLCD</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">reading</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+</pre>
