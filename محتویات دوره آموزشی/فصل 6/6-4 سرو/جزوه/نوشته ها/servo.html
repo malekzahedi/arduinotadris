@@ -1,0 +1,23 @@
+<pre>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">Servo</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+<font color="#434f54">&#47;&#47; ساختن شی سرو و اسم گذاری آن</font>
+<b><font color="#d35400">Servo</font></b> <font color="#000000">myservo</font><font color="#000000">;</font> 
+
+<font color="#00979c">int</font> <font color="#000000">inputPin</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> &nbsp;
+<font color="#00979c">int</font> <font color="#000000">val</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;
+
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">&#47;&#47; تعریف پین متصل شده به سیم سیگنال موتور</font>
+ &nbsp;<font color="#000000">myservo</font><font color="#434f54">.</font><font color="#d35400">attach</font><font color="#000000">(</font><font color="#000000">9</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#000000">val</font> <font color="#434f54">=</font> <font color="#d35400">analogRead</font><font color="#000000">(</font><font color="#000000">inputPin</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;<font color="#000000">val</font> <font color="#434f54">=</font> <font color="#d35400">map</font><font color="#000000">(</font><font color="#000000">value</font><font color="#434f54">,</font> <font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1023</font><font color="#434f54">,</font> <font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">180</font><font color="#000000">)</font><font color="#000000">;</font> 
+ &nbsp;<font color="#434f54">&#47;&#47; نوشتن اندازه زاویه یا سرعت دورانی &nbsp;&nbsp;</font>
+ &nbsp;<font color="#000000">myservo</font><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">val</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#434f54">&#47;&#47; تاخیری به مدار می دهیم تا سرو فرصت کند به زاویه مطلوب برسد. &nbsp;</font>
+ &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">15</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#000000">}</font>
+
+</pre>
