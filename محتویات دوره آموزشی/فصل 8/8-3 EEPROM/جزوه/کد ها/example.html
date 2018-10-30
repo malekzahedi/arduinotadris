@@ -1,0 +1,24 @@
+<pre>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">EEPROM</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+
+<font color="#5e6d03">#define</font> <font color="#000000">address</font> <font color="#000000">1</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">{</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47; „ﬁœ«— œÂÌ «Ê·ÌÂ »Â Õ«›ŸÂ »«Ìœ ’Ê—  êÌ—œ</font>
+ &nbsp;<font color="#00979c">byte</font> <font color="#000000">firstValue</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">EEPROM</font></b><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">address</font><font color="#434f54">,</font> <font color="#000000">firstValue</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">{</font>
+ &nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">{</font>
+ &nbsp;&nbsp;<font color="#00979c">char</font> <font color="#000000">reading</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;<font color="#00979c">byte</font> <font color="#000000">value</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">parseInt</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> 
+ &nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font> <font color="#000000">reading</font> <font color="#434f54">==</font> <font color="#00979c">&#39;w&#39;</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">EEPROM</font></b><font color="#434f54">.</font><font color="#d35400">update</font><font color="#000000">(</font><font color="#000000">address</font><font color="#434f54">,</font> <font color="#000000">value</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font> <font color="#000000">reading</font> <font color="#434f54">==</font> <font color="#00979c">&#39;r&#39;</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">println</font><font color="#000000">(</font><b><font color="#d35400">EEPROM</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">address</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font> 
+ &nbsp;&nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+
+</pre>
