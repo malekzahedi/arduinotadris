@@ -1,0 +1,4 @@
+<pre>
+ &nbsp;<font color="#00979c">int</font> <font color="#000000">value</font> <font color="#434f54">=</font> <font color="#000000">256</font><font color="#000000">;</font>
+
+</pre>
